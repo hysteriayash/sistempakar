@@ -1,0 +1,79 @@
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Stop DBD</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Aplikasi ini untuk mendiagnosa kemungkinan penyakit Demam Berdarah Dengue pada diri Anda.">
+    <link rel="shortcut icon" href="assets/img/ai.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#f8f9fa">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-vue.css">
+
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/polyfill.min.js"></script>
+    <script src="assets/js/bootstrap-vue.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <!-- Image and text -->
+    <nav class="navbar navbar-light fixed-top" style="background-color: #f8f9fa;">
+        <a class="navbar-brand" v-on:click="goHome">
+            <img src="assets/img/mind.png" width="30" height="30" class="d-inline-block align-top"
+                 alt="logo">
+            Sistem Pakar DBD
+        </a>
+    </nav>
+
+    <div class="container" style="margin-top: 70px; margin-bottom: 100px" v-if='goAbout'>
+        <!-- Container About -->
+        <div class="row animated fadeIn">
+            <div class="col-12 offset-lg-1 col-lg-10">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Profil</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><br>Aplikasi Sistem Pakar DBD - 2019</h5>
+                        <p>
+                        <center> ini dibuat untuk memenuhi Skripsi - STMIK Bina Sarana Global
+                            2019.
+                        </center>
+                        </p>
+                        <div class="row text-center">
+                            <div class="col-lg-4 col-md-4"><a href="https://github.com/hysteriayash"
+                                                              target="_blank">Yahya Ayash</a></div>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <img src="user.png" style="width:100px;height:100px;">
+                        </div>
+                        <hr>
+                        <p class="text-center">&lt;/&gt; with <i class="fas fa-heart"
+                                                                 style="color: salmon"></i> @ <a
+                                href="https://stmikglobal.ac.id/">STMIK Bina Sarana Global</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container about end -->
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</html>

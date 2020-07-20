@@ -1,0 +1,135 @@
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Stop DBD</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Aplikasi ini untuk mendiagnosa kemungkinan penyakit Demam Berdarah Dengue pada diri Anda.">
+    <link rel="shortcut icon" href="assets/img/ai.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#f8f9fa">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-vue.css">
+
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/polyfill.min.js"></script>
+    <script src="assets/js/bootstrap-vue.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <!-- Image and text -->
+    <nav class="navbar navbar-light fixed-top" style="background-color: #f8f9fa;">
+        <a class="navbar-brand" v-on:click="goHome">
+            <img src="assets/img/mind.png" width="30" height="30" class="d-inline-block align-top"
+                 alt="logo">
+            Sistem Pakar DBD
+        </a>
+    </nav>
+
+    <div class="container animated-1s fadeIn" style="margin-bottom: 100px; margin-top: 70px"
+         v-if='goInfo'>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header list-group-item active">
+                        <h4>Demam Berdarah Dengue</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="text-info">Secara Umum</h5>
+                        <p>Demam berdarah dengue (DBD) adalah penyakit menular yang disebabkan oleh
+                            virus dengue yang dibawa oleh nyamuk. DBD dulu disebut
+                            penyakit
+                            “break-bone” karena kadang menyebabkan nyeri sendi dan otot di mana
+                            tulang
+                            terasa retak.</p>
+                        <p>Demam berdarah DBD disebabkan oleh virus yang disebarkan oleh gigitan
+                            nyamuk.
+                            Terdapat 4 virus dengue, yaitu virus DEN-1, DEN-2, DEN-3 dan DEN-4.
+                            Nyamuk yang berasal
+                            dari famili tertentu yaitu Aedes aegypti atau Aedes albopictus dapat
+                            membawa virus untuk
+                            menginfeksi darah manusia dengan gigitan dan mentransfer darah yang
+                            terinfeksi ke orang lain.
+                            Begitu Anda pulih dari demam berdarah, imunitas Anda akan terbentuk
+                            namun hanya sampai strain tertentu.
+                        </p>
+
+                        <p>Demam Berdarah Dengue menyebabkan demam tinggi, ruam, dan nyeri otot dan
+                            sendi.
+                            Demam berdarah yang parah, atau juga dikenal sebagai dengue
+                            hemorrhagic fever,
+                            dapat menyebabkan perdarahan serius, penurunan tekanan darah yang
+                            tiba-tiba (shock),
+                            dan kematian.</p>
+                    </div>
+                </div>
+                <br>
+
+                            <div class="card">
+                                <div class="card-header list-group-item active">
+                                    <h4>Gejala</h4>
+                                </div>
+                                <div class="card-body">
+
+                            <p>Gejala klinis dari Demam Berdarah Dengue yaitu :</p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">1.  Demam tinggi, hingga 40 derajat C</li>
+                                        <li class="list-group-item">2.  Sakit Kepala Parah</li>
+                                        <li class="list-group-item">3.  Nyeri pada Retro-Orbital (bagian belakang mata)</li>
+                                        <li class="list-group-item">4.  Nyeri Otot dan Sendi Parah</li>
+                                        <li class="list-group-item">5.  Mual dan Muntah</li>
+                                        <li class="list-group-item">6.  Dehidrasi</li>
+                                        <li class="list-group-item">7.  Insomnia</li>
+                                        <li class="list-group-item">8.  Ruam</li>
+                                        <li class="list-group-item">9.  Perdarahan dari hidung, gusi, atau di bawah kulit</li>
+                                        <li class="list-group-item">10.  Pendarahan Parah</li>
+                                        <li class="list-group-item">11.  Shock (tekanan darah sangat rendah)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                <br>
+                                <div class="card">
+                                    <div class="card-header list-group-item active">
+                                        <h4>Penanganan</h4>
+                                    </div>
+                                    <div class="card-body">
+
+                            <p>Tidak ada penanganan spesifik untuk demam berdarah DBD, kebanyakan
+                                pasien pulih dalam 2 minggu. Penting untuk menangani
+                                gejala-gejala untuk menghindari komplikasi. Jika Anda memiliki
+                                tanda-tanda atau gejala-gejala tersebut atau pertanyaan lainnya,
+                                konsultasikanlah dengan dokter Anda. Tubuh masing-masing orang
+                                berbeda. Selalu konsultasikan ke dokter untuk menangani kondisi
+                                kesehatan Anda.</p>
+                            <p>Beberapa tes laboratorium dapat mendeteksi bukti virus dengue, namun
+                                hasil tes biasanya keluar agak lama untuk segera
+                                memberi keputusan pengobatan.</p>
+                        </li>
+                    </ul>
+                    <div class="card-body ">
+                        <b>Sumber : </b>
+                            Dokter Yayu Nurahayu - Puskesmas Rajeg
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</html>

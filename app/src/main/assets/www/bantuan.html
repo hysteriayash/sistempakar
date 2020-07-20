@@ -1,0 +1,124 @@
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Stop DBD</title>
+    <meta charset="UTF-8">
+    <meta name="description"
+          content="Aplikasi ini untuk mendiagnosa kemungkinan penyakit Demam Berdarah Dengue pada diri Anda.">
+    <link rel="shortcut icon" href="assets/img/ai.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#f8f9fa">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+          integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-vue.css">
+
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/polyfill.min.js"></script>
+    <script src="assets/js/bootstrap-vue.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <!-- Image and text -->
+    <nav class="navbar navbar-light fixed-top" style="background-color: #f8f9fa;">
+        <a class="navbar-brand" v-on:click="goHome">
+            <img src="assets/img/mind.png" width="30" height="30" class="d-inline-block align-top"
+                 alt="logo">
+            Sistem Pakar DBD
+        </a>
+    </nav>
+
+    <div class="container animated-1s fadeIn" style="margin-bottom: 100px; margin-top: 70px"
+         v-if='goBantuan'>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Bantuan</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <h5 class="text-info">Langkah Penggunaan</h5>
+
+                        <p>Aplikasi sistem pakar ini akan mendiagnosa secara dini apakah terdapat
+                            potensi Demam Berdarah pada diri Anda berdasarkan gejala yang
+                            ditimbulkan berdasarkan kepastian dari pasien</p>
+
+                        <div class="card-body">
+                            <h5 class="text-info">1. Menu Konsultasi</h5>
+
+                            <ul class="list-group">
+
+                                <li class="list-group-item list-group-item-action active">Pilih Menu
+                                    Konsultasi
+                                </li>
+                                <li class="list-group-item">Masukan Nama Anda</li>
+                                <li class="list-group-item">Jawab Pertanyaan dari Gejala menurut
+                                    yang ada rasakan
+                                </li>
+                                <li class="list-group-item">Hasilnya Akan Muncul Persentase
+                                    kemungkinan terkena Penyakit dari Gejala yang anda pilih
+                                </li>
+                            </ul>
+                            <br>
+                            <h5 class="text-info">2. Menu Info</h5>
+
+                            <ul class="list-group">
+
+                                <li class="list-group-item list-group-item-action active">Pilih Menu
+                                    Info
+                                </li>
+                                <li class="list-group-item">Pada Menu ini anda akan diberikan
+                                    keterangan tentang penyakit Demam Berdarah
+                                </li>
+
+                            </ul>
+                            <br>
+                            <h5 class="text-info">3. Menu Bantuan</h5>
+
+                            <ul class="list-group">
+
+                                <li class="list-group-item list-group-item-action active">Pilih Menu
+                                    Bantuan
+                                </li>
+                                <li class="list-group-item">Pada Menu ini anda akan diberikan
+                                    bagaimana cara menggunakan aplikasi ini
+                                </li>
+
+                            </ul>
+                            <br>
+                            <h5 class="text-info">4. Menu Tentang</h5>
+
+                            <ul class="list-group">
+
+                                <li class="list-group-item list-group-item-action active">Pilih Menu
+                                    Tentang
+                                </li>
+                                <li class="list-group-item">Pada Menu ini anda akan diberikan
+                                    informasi seputar Profil Admin
+                                </li>
+
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</html>

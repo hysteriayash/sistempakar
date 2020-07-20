@@ -1,0 +1,11 @@
+{
+  "name": "SispakDBD",
+  "short_name": "SispakDBD",
+  "theme_color": "#143550",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "Scope": "/hysteriayash.github.io",
+  "start_url": "/hysteriayash.github.io/",
+
+  "splash_pages": null
+}
