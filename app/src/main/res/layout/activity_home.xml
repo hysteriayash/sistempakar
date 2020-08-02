@@ -364,7 +364,7 @@
         android:gravity="bottom|center"
         android:inputType="textPersonName"
         android:paddingBottom="5dp"
-        android:text="Collaboration with Puskesmas Rajeg - 2019" />
+        android:text="Collaboration with Klinik Sukamulya Medika" />
 
 
 </RelativeLayout>
